@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+ <html>
+ <head><title>LOGIN-POSHAN</title>
+     <meta name="author" content="Shebin Silvister">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+     <link type="text/javascript" rel="javascript" href="js/myscript.js">
+       <link rel="stylesheet" type="text/css" href="css/mycss.css"/>
+
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
+
+         <script type = "text/javascript" src = "https://www.gstatic.com/charts/loader.js">
+   </script>
+   <script type = "text/javascript">
+
+          google.charts.load('current', {packages: ['corechart']});
+   </script>
+
+
+
+</head>
+<body style="background-position:center;background-size:100%;background-repeat:no-repeat;position:relative">
+
+
+
+
+
+<div >
+    <nav style="position:fixed" class="nav-extended black lighten-1 navbar-fixed" >
+
+        <div class="nav-wrapper" style="text-align:center">
+     <a href=""   class="brand-logo" style="margin-left:-5%"><b>MTC ADMIN</b></a>
+        </div>
+        <div class="nav-content ">
+
+            <ul class="tabs tabs-transparent ">
+                <li class="tab">
+                    <a  href="overview.html" style="border:none">Overview</a>
+                </li>
+                <li class="tab ">
+                    <a class="active" style="border-bottom:1px solid white" href="mtc.html">MTC</a>
+                </li>
+                <li class="tab">
+                    <a href="ls.html">LS</a>
+                </li>
+                <li class="tab right">
+                    <a href="admin.html"><i class="material-icons left">mdhome</i>Admin</a>
+                </li>
+            <li class="indicator" style="left: 0px; right: 1259px;"></li></ul>
+        </div>
+    </nav>
+</div>
+<br><br><br><br><br>
+<h2>Chas MTC-Child 2</h2>
+<div class="container">
+<div style="width:50%;float:left">
+  <ul class="collection">
+    <li class="collection-item active" style="border-radius:3px"><b>Personal Details</b></li>
+    <li class="collection-item">SAM Number:<br>Name: thename<br>Father Name: father_name<br>Mother Name: mother_name<br>Gender: gender<br>Date of Birth: dd/mm/yy<br>
+    Block: block_name<br>Address: address<br>Gram Panchayat: panchayat_name<br>District: dist_name<br>Date of Joining: dd/mm/yy<br>BPL: Yes/No<br>Height(Admission): 70<br>Weight(Admission): 6<br></li>
+
+
+  </ul>
+</div>
+<div style="width:50%;float:left">
+  <ul class="collection">
+    <li class="collection-item active" style="border-radius:3px"><b>Treatment Details</b></li>
+      <li class="collection-item"> <div id="curve_chart" style="width: 500px; height: 325px"></div></li>
+
+  </ul>
+</div>
+</div>
+<br><br><br><br>
+<br><br><br><br>  <br><br><br><br>
+<br><br><br><br><br><br><br>
+  <div >
+
+
+    <footer class="page-footer black">
+
+      <div class="footer-copyright">
+        <div class="container">
+        © 2018 Copyright
+        <a class="grey-text text-lighten-4 right" href="#!">Terms</a>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+  </div>
+
+
+
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['Day(after admission)', 'Weight(kg)'],
+        ['1',  1.50 ],
+        ['2',  1.51],
+        ['3',  1.51],
+        ['4',  1.55],
+        ['5',  1.54 ],
+        ['6',  1.57],
+        ['7',  1.57],
+        ['8',  1.57],
+        ['9',  1.58 ],
+        ['10', 1.60],
+        ['11', 1.61],
+        ['12', 1.62]
+      ]);
+
+      var options = {
+        title: 'Daily Weight Gain',
+
+        legend: { position: 'bottom' }
+      };
+
+      var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+      chart.draw(data, options);
+    }
+  </script>
+
+
+
+
+
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+
+</body>
+</html>
