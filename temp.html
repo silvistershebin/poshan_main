@@ -1,0 +1,252 @@
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+ <html>
+ <head><title>LOGIN-POSHAN</title>
+     <meta name="author" content="Shebin Silvister">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+     <link type="text/javascript" rel="javascript" href="js/myscript.js">
+       <link rel="stylesheet" type="text/css" href="css/mycss.css"/>
+
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
+
+         <script type = "text/javascript" src = "https://www.gstatic.com/charts/loader.js">
+   </script>
+   <script type = "text/javascript">
+
+          google.charts.load('current', {packages: ['corechart']});
+   </script>
+
+
+
+</head>
+<body background="img/bg2.jpg" style="background-position:center;background-size:cover;background-repeat:no-repeat;position:relative">
+<div>
+
+
+    <!-- <nav class="green darken-4" role="navigation" style="position:fixed" >
+      <div class="nav-wrapper container right">
+        <ul class="right">
+          <li><a href="http://htmlcheats.com/wp-content/uploads/2015/04/about.html">About</a></li>
+          <li><a href="http://htmlcheats.com/wp-content/uploads/2015/04/privacy.html">Privacy</a></li>
+          <li><a href="http://htmlcheats.com/wp-content/uploads/2015/04/terms.html">Terms</a></li>
+        </ul>
+        <a href="http://htmlcheats.com/wp-content/uploads/2015/04/navbar-part-1g.html#" class="brand-logo left"><img src="img/malnutrition.jpg" style="height:10&;width:10%"></img></a>
+      </div>
+    </nav> -->
+
+<div >
+    <nav style="position:fixed" class="nav-extended green darken-1 navbar-fixed z-depth-5" >
+
+        <div class="nav-wrapper" style="text-align:center"><img src="img/logo1.jpg" style="height:95px" class="left"></img>
+     <a href=""   class="brand-logo" style="margin-left:-5%"><b>MTC ADMIN</b></a>
+        </div>
+        <div class="nav-content ">
+
+            <ul class="tabs tabs-transparent ">
+                <li class="tab ">
+                    <a class="active" style="border-bottom:1px solid white" href="">Overview</a>
+                </li>
+                <li class="tab">
+                    <a href="mtc.html">MTC</a>
+                </li>
+                <li class="tab">
+                    <a href="ls.html"> Lady Supervisor</a>
+                </li>
+                <li class="tab right">
+                    <a href="admin.html"> Admin</a>
+                </li>
+             </ul>
+        </div>
+    </nav>
+</div>
+<br><br><br><br><br>
+<div >
+<h2>MTC Centers Analysis</h2>
+<br>
+<div class="row" style="padding:5%;padding-top:0px">
+  <center><table class="centered z-depth-5" style="background-color:rgba(0, 0, 0, 0.3)">
+  <thead>
+    <tr>
+      <th>S.No</th>
+        <th>Name</th>
+        <th>Total Beds</th>
+        <th>Vacant Beds</th>
+        <th>About to Discharge</th>
+        <th>Average Bed Occupancy</th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+      <tr>
+      <td>1.</td>
+      <td><b>CHAS</b></td>
+      <td>20</td>
+      <td>20</td>
+      <td>0</td>
+      <td style="background-color:red;color:white;border:1px solid white">0% (Performance is Bad)</td>
+    </tr>
+    <tr>
+      <td>2.</td>
+      <td><b>GOMIA</b></td>
+      <td>10</td>
+      <td>10</td>
+      <td>0</td>
+      <td style="background-color:red;color:white;border:1px solid white">0% (Performance is Bad)</td>
+    </tr>
+    <tr>
+      <td>3.</td>
+      <td><b>PETEWAR</b></td>
+      <td>10</td>
+      <td>10</td>
+      <td>0</td>
+      <td style="background-color:red;color:white;border:1px solid white">0% (Performance is Bad)</td>
+    </tr>
+    <tr>
+      <td>4.</td>
+      <td><b>PHUSRO</b></td>
+      <td>10</td>
+      <td>10</td>
+      <td>0</td>
+      <td style="background-color:red;color:white;border:1px solid white">0% (Performance is Bad)</td>
+    </tr>
+  </tbody>
+</table><center>
+</div>
+
+
+    <!-- <center><div id = "container" class="z-depth-3 col-md-4 col-md-offset-4" style = "width:90%; height: 500px; margin-right:-3%;"></center> -->
+
+<div class="container " >
+  <center><div id = "container" class="z-depth-3 " </center>
+
+        <!-- <div id="dual_x_div" style="  min-width: 310px; max-width: 800px; height: 500px;"></div> -->
+</div>
+
+</div>
+</div>
+
+
+<br/><br/>
+
+<!--
+<center><div id = "container" style = "width: 10%; height: 100px">
+</div></center> -->
+
+<footer class="footer-extended page-footer green darken-3">
+
+  <div class="footer-copyright">
+    <div class="container">
+    © 2018 Copyright
+    <a class="grey-text text-lighten-4 right" href="#!">Terms</a>
+    </div>
+  </div>
+</footer>
+
+
+
+</div>
+     <script language = "JavaScript">
+        function drawChart() {
+           // Define the chart to be drawn.
+           var data = google.visualization.arrayToDataTable([
+              ['MTC Centres', 'No.of beds occupied', 'No. of beds vacant'],
+              ['Chas',  5,      15],
+              ['Gomia',  2,      8],
+              ['Petewar',  2,      8],
+              ['Phusro',  2,       8],
+              ['TOTAL',  11,      39]
+           ]);
+
+           var options = {title: 'Population (in millions)'};
+
+           // Instantiate and draw the chart.
+           var chart = new google.visualization.BarChart(document.getElementById('container'));
+           chart.draw(data, options);
+        };
+        $(window).resize(function(){
+          drawStuff();
+        });
+        google.charts.setOnLoadCallback(drawChart);
+     </script>
+
+     <!-- <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawStuff);
+
+      function drawStuff() {
+        var data = new google.visualization.arrayToDataTable([
+          ['Galaxy', 'Distance', 'Brightness'],
+          ['Canis Major Dwarf', 8000, 23.3],
+          ['Sagittarius Dwarf', 24000, 4.5],
+          ['Ursa Major II Dwarf', 30000, 14.3],
+          ['Lg. Magellanic Cloud', 50000, 0.9],
+          ['Bootes I', 60000, 13.1]
+        ]);
+
+        var options = {
+          minWidth: 310,
+maxWidth: 800,
+          chart: {
+            title: 'Nearby galaxies',
+            subtitle: 'distance on the left, brightness on the right'
+          },
+          bars: 'horizontal', // Required for Material Bar Charts.
+          series: {
+            0: { axis: 'distance' }, // Bind series 0 to an axis named 'distance'.
+            1: { axis: 'brightness' } // Bind series 1 to an axis named 'brightness'.
+          },
+          axes: {
+            x: {
+              distance: {label: 'parsecs'}, // Bottom x-axis.
+              brightness: {side: 'top', label: 'apparent magnitude'} // Top x-axis.
+            }
+          }
+        };
+
+      var chart = new google.charts.Bar(document.getElementById('dual_x_div'));
+      chart.draw(data, options);
+    };
+    </script> -->
+
+
+
+
+
+
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <!-- <script language = "JavaScript">
+     function drawChart() {
+        // Define the chart to be drawn.
+        var data = google.visualization.arrayToDataTable([
+           ['MTC Centre', 'No.of Beds'],
+           ['Phusro',  10],
+           ['Petewar',  10],
+           ['Gomia',  10],
+           ['Chas',  20],
+
+        ]);
+
+        var options = {title: 'MTC Bed Efficiency'};
+
+        // Instantiate and draw the chart.
+        var chart = new google.visualization.BarChart(document.getElementById('container'));
+        chart.draw(data, options);
+     }
+     google.charts.setOnLoadCallback(drawChart);
+  </script> -->
+</body>
+</html>

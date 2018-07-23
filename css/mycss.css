@@ -4,7 +4,31 @@ a:hover{
 }
 h2{
   text-align:center;
+  color:#004400;
+  font-weight:bold;
 }
 a{
   color:black;
+}
+
+h3{
+  text-align:center;
+  color:#004400;
+  font-weight:bold;
+}
+
+
+
+.grandParentContaniner{
+  display:table; height:100%; width:35%; margin: 0 auto;
+}
+
+.parentContainer{
+  display:table-cell; vertical-align:middle;
+}
+
+
+
+.row {
+  margin:0 !important;
 }
